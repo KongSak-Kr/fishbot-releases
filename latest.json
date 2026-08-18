@@ -1,8 +1,8 @@
 {
-  "version": "1.0.9",
-  "url": "https://github.com/KongSak-Kr/fishbot-releases/releases/download/v1.0.9/-.-v1.0.9.zip",
-  "sha256": "657eca277d59d7a18a73904ce4bf3ea9657697dc202c630c854ed5ac719a067d",
-  "notes": "실행 탭 로그에 날짜와 시각이 찍힙니다.\n\n    [08-16 22:19:08] [정지] 사용자가 정지했습니다\n\n밤새 돌려두고 나중에 로그를 보면 순서만 있고 언제였는지는 알 수\n없었습니다. 가동 시간대가 자정을 넘기므로 시각만이 아니라 날짜도\n함께 넣었습니다.",
+  "version": "1.0.10",
+  "url": "https://github.com/KongSak-Kr/fishbot-releases/releases/download/v1.0.10/-.-v1.0.10.zip",
+  "sha256": "8ef078289058470cce16c6c9318b4455f2a63b8ce14272b0a29fbae0cce53b44",
+  "notes": "화면 글자 인식률 개선\n\n화면을 OCR에 넘기기 전에 흑백으로 바꾸고 2배로 키웁니다.\n저장된 실제 화면 26장으로 재봤습니다.\n\n                    이전      이후\n  자동어 잡음        8/20     15/20\n  잘못 잡음(오탐)     0/6       0/6\n  낚시 횟수 읽음      2/20     10/20\n\n자동어를 놓치거나, 낚시 횟수를 못 읽어 엉뚱한 동작을 하던 일이\n줄어듭니다. 낚시 한 번마다 0.03초 정도 더 듭니다.\n\n※ 느린 컴퓨터에서 부담되면 config.yaml의 ocr.upscale을 1로 두면\n   꺼집니다.",
   "breaking": [],
   "min_schema": 1
 }
